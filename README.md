@@ -54,7 +54,7 @@ jobs:
       shell: bash
 
     # This action.
-      - name: Enable tutor plugin - Forum
-        uses: openedx-actions/tutor-enable-plugin-forum@v0.0.1
-        if: ${{ env.ENABLE_FORUM == 'true' }}
+    - name: Enable tutor plugin - Forum
+      uses: openedx-actions/tutor-enable-plugin-forum@v0.0.1
+      if: ${{ env.ENABLE_FORUM == 'true' }}
 ```
