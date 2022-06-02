@@ -55,6 +55,6 @@ jobs:
 
     # This action.
       - name: Enable tutor plugin - Forum
-        uses: openedx-actions/tutor-enable-plugin-forum
+        uses: openedx-actions/tutor-enable-plugin-forum@v0.0.1
         if: ${{ env.ENABLE_FORUM == 'true' }}
 ```
