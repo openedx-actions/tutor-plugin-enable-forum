@@ -7,8 +7,8 @@
 #
 # FIX NOTE: move to Github Actions marketplace
 #------------------------------------------------------------------------------
-name: enable Forum plugin for tutor
-description: Open edX Tutor k8s enable Discussion Forum plugin
+name: Open edX Tutor k8s enable Discussion Forum plugin
+description: Github Action to install and enable the Tutor plugin - Open edX Discussion Forum service
 branding:
   icon: 'cloud'
   color: 'orange'
