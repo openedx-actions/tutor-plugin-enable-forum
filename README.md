@@ -38,9 +38,17 @@ jobs:
 
       # install and configure tutor and kubectl
       - name: Configure Github workflow environment
-        uses: openedx-actions/tutor-k8s-init@v0.0.13
+        uses: openedx-actions/tutor-k8s-init@v1.0.0
+
+      #
+      # ... steps to deploy your Open edX instance to k8s ...
+      #
 
       # This action.
       - name: Enable tutor plugin - Forum
-        uses: openedx-actions/tutor-enable-plugin-forum@v0.0.1
+        uses: openedx-actions/tutor-enable-plugin-forum@v1.0.0
+
+      #
+      # ... more steps to deploy your Open edX instance to k8s ...
+      #
 ```
