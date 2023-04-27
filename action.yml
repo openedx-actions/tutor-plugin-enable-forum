@@ -12,6 +12,12 @@ description: Github Action to install and enable the Tutor plugin - Open edX Dis
 branding:
   icon: 'cloud'
   color: 'orange'
+inputs:
+  tutor-forum-version:
+    description: 'The version of tutor-forum to install'
+    required: false
+    default: latest
+    type: string
 
 runs:
   using: "composite"
@@ -21,7 +27,7 @@ runs:
 
     - name: Configure Discussion Forum
       run:  |-
-        pip install tutor-forum
+        pip install tutor-forum${{ inputs.tutor-forum-version != 'latest' && format('=={0}', inputs.tutor-forum-version) || '' }}
         tutor plugins enable forum
         tutor config save
       shell: bash
