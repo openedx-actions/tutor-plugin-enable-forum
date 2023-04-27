@@ -14,7 +14,7 @@ branding:
   color: 'orange'
 inputs:
   tutor-forum-version:
-    description: 'The version of tutor-mfe to install'
+    description: 'The version of tutor-forum to install'
     required: false
     default: latest
     type: string
