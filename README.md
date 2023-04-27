@@ -44,7 +44,7 @@ jobs:
       # This action.
       # - tutor-forum-version: optional. defaults to "latest"
       - name: Enable tutor plugin - Forum
-        uses: openedx-actions/tutor-enable-plugin-forum@v1.0.0
+        uses: openedx-actions/tutor-enable-plugin-forum@v1.0.1
         with:
           tutor-forum-version: "14.0.0"
 
